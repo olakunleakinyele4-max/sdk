@@ -28,8 +28,8 @@
     }
   },
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "dev": "node init && tsup --watch",
+    "build": "node init && tsup",
     "lint": "eslint src --ext .ts,.tsx",
     "type-check": "tsc --noEmit",
     "format": "prettier --write src",
@@ -41,6 +41,8 @@
   },
   "dependencies": {
     "@stellar/stellar-sdk": "^12.0.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "uuid": "^9.0.0",
     "zod": "^3.23.8"
   },
